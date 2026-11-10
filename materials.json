@@ -50,7 +50,7 @@
       "clearcoatRoughness": 0.08
     },
     "glass": {
-      "color": "#5F8990",
+      "color": "#111315",
       "roughness": 0.08,
       "metalness": 0,
       "clearcoat": 0.3,
