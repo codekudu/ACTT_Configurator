@@ -56,7 +56,7 @@
       "clearcoat": 0.3,
       "clearcoatRoughness": 0.08,
       "transmission": 0.15,
-      "opacity": 0.58,
+      "opacity": 0.8,
       "ior": 1.48,
       "depthWrite": false
     },
