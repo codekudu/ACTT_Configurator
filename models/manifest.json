@@ -1,1 +1,1684 @@
+{
+  "coordinateSystem": "base-model-local",
+  "models": [
+    {
+      "name": "116 Boom",
+      "obj": "116_boom.obj",
+      "alwaysLoad": true,
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "116_boom.mtl"
+    },
+    {
+      "name": "116 Frame",
+      "obj": "116_frame.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "116_frame.mtl"
+    },
+    {
+      "name": "122 Decking",
+      "obj": "122_decking.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "122_decking.mtl"
+    },
+    {
+      "name": "122 Frame",
+      "obj": "122_frame.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "122_frame.mtl",
+      "color": "#2B2E31"
+    },
+    {
+      "name": "Adas",
+      "obj": "adas.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "adas.mtl"
+    },
+    {
+      "name": "Airbags",
+      "obj": "airbags.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "airbags.mtl"
+    },
+    {
+      "name": "Airlines",
+      "obj": "airlines.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "airlines.mtl"
+    },
+    {
+      "name": "Bbox",
+      "obj": "bbox.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "DOToperation": "dot"
+          },
+          "offset": [
+            17,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "bbox.mtl"
+    },
+    {
+      "name": "Bbox Lh",
+      "obj": "bbox_lh.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "bbox_lh.mtl"
+    },
+    {
+      "name": "Beacon",
+      "obj": "beacon.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "beacon.mtl"
+    },
+    {
+      "name": "Button Shifter",
+      "obj": "button_shifter.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "button_shifter.mtl"
+    },
+    {
+      "name": "Cabtilt Front",
+      "obj": "cabtilt_front.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "cabtilt_front.mtl"
+    },
+    {
+      "name": "Cabtilt Rear",
+      "obj": "cabtilt_rear.obj",
+      "enabled": true,
+      "position": [
+        -5,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6.5,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "cabtilt_rear.mtl"
+    },
+    {
+      "name": "Cvx Mirrors",
+      "obj": "cvx_mirrors.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "cvx_mirrors.mtl"
+    },
+    {
+      "name": "Cylinders",
+      "obj": "cylinders.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "cylinders.mtl"
+    },
+    {
+      "name": "Davco Fuelfilter",
+      "obj": "davco_fuelfilter.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "davco_fuelfilter.mtl"
+    },
+    {
+      "name": "Decal",
+      "obj": "decal.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "decal.mtl"
+    },
+    {
+      "name": "Deftank",
+      "obj": "deftank.obj",
+      "enabled": true,
+      "position": [
+        -1,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "deftank.mtl"
+    },
+    {
+      "name": "Dipstick",
+      "obj": "dipstick.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "dipstick.mtl"
+    },
+    {
+      "name": "Door Handle",
+      "obj": "door_handle.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "door_handle.mtl"
+    },
+    {
+      "name": "Door Latch",
+      "obj": "door_latch.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "door_latch.mtl"
+    },
+    {
+      "name": "Doorcrank",
+      "obj": "doorcrank.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "doorcrank.mtl"
+    },
+    {
+      "name": "Doorscreen",
+      "obj": "doorscreen.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "doorscreen.mtl"
+    },
+    {
+      "name": "Driveshaft",
+      "obj": "driveshaft.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "driveshaft.mtl"
+    },
+    {
+      "name": "Ev Battery",
+      "obj": "ev_battery.obj",
+      "enabled": true,
+      "position": [
+        -6.5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "ev_battery.mtl"
+    },
+    {
+      "name": "Fenders",
+      "obj": "fenders.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "fenders.mtl"
+    },
+    {
+      "name": "Fh Cabguard",
+      "obj": "fh_cabguard.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "fh_cabguard.mtl"
+    },
+    {
+      "name": "Floormat",
+      "obj": "floormat.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "floormat.mtl"
+    },
+    {
+      "name": "Front Shocks",
+      "obj": "front_shocks.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "front_shocks.mtl"
+    },
+    {
+      "name": "Glass",
+      "obj": "glass.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "glass.mtl",
+      "material": "glass"
+    },
+    {
+      "name": "Grille",
+      "obj": "grille.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "grille.mtl"
+    },
+    {
+      "name": "Hydrotank",
+      "obj": "hydrotank.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "hydrotank.mtl"
+    },
+    {
+      "name": "Isb Aft Stack",
+      "obj": "isb_aft_stack.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "isb_aft_stack.mtl"
+    },
+    {
+      "name": "Jwl Ind",
+      "obj": "jwl_ind.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "jwl_ind.mtl"
+    },
+    {
+      "name": "Lh Fuel Round",
+      "obj": "lh_fuel_round.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "lh_fuel_round.mtl"
+    },
+    {
+      "name": "Lh Sq Fueltank",
+      "obj": "lh_sq_fueltank.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "lh_sq_fueltank.mtl"
+    },
+    {
+      "name": "Lh Steps",
+      "obj": "lh_steps.obj",
+      "enabled": true,
+      "position": [
+        -1.25,
+        -1,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "powerSystem": "electric"
+          },
+          "offset": [
+            -4,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "lh_steps.mtl"
+    },
+    {
+      "name": "Lh Tank Decking",
+      "obj": "lh_tank_decking.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "lh_tank_decking.mtl"
+    },
+    {
+      "name": "Marker",
+      "obj": "marker.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "marker.mtl"
+    },
+    {
+      "name": "Markers",
+      "obj": "markers.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "markers.mtl"
+    },
+    {
+      "name": "Mirrors Std",
+      "obj": "mirrors_std.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "mirrors_std.mtl"
+    },
+    {
+      "name": "Moto Mirror",
+      "obj": "moto_mirror.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "moto_mirror.mtl"
+    },
+    {
+      "name": "Mudflaps",
+      "obj": "mudflaps.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "mudflaps.mtl"
+    },
+    {
+      "name": "No Cabguard",
+      "obj": "no_cabguard.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "no_cabguard.mtl"
+    },
+    {
+      "name": "Parkvalve",
+      "obj": "parkvalve.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "parkvalve.mtl"
+    },
+    {
+      "name": "Pedals",
+      "obj": "pedals.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "pedals.mtl"
+    },
+    {
+      "name": "Powertrain",
+      "obj": "powertrain.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "powertrain.mtl"
+    },
+    {
+      "name": "Qsb Aft Stack",
+      "obj": "qsb_aft_stack.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "qsb_aft_stack.mtl"
+    },
+    {
+      "name": "Rear Handle",
+      "obj": "rear_handle.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rear_handle.mtl"
+    },
+    {
+      "name": "Rear Rims",
+      "obj": "rear_rims.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rear_rims.mtl"
+    },
+    {
+      "name": "Rear Tires",
+      "obj": "rear_tires.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rear_tires.mtl",
+      "material": "rubber"
+    },
+    {
+      "name": "Rearlight",
+      "obj": "rearlight.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rearlight.mtl"
+    },
+    {
+      "name": "Rh Sq Fueltank",
+      "obj": "rh_sq_fueltank.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rh_sq_fueltank.mtl"
+    },
+    {
+      "name": "Rh Steps",
+      "obj": "rh_steps.obj",
+      "enabled": true,
+      "position": [
+        -1.25,
+        -1,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "powerSystem": "electric"
+          },
+          "offset": [
+            -4.5,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rh_steps.mtl"
+    },
+    {
+      "name": "Rs23-160",
+      "obj": "rs23-160.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "unitsPerInch": 1,
+      "positionRules": [
+        {
+          "if": {
+            "wheelbase": "122"
+          },
+          "offset": [
+            6,
+            0,
+            0
+          ],
+          "units": "inches"
+        }
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "rs23-160.mtl"
+    },
+    {
+      "name": "Seat",
+      "obj": "seat.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "seat.mtl"
+    },
+    {
+      "name": "Seatbelt",
+      "obj": "seatbelt.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "seatbelt.mtl"
+    },
+    {
+      "name": "Shifterbox",
+      "obj": "shifterbox.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "shifterbox.mtl"
+    },
+    {
+      "name": "Slider Wndw",
+      "obj": "slider_wndw.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "slider_wndw.mtl"
+    },
+    {
+      "name": "Std Cabguard",
+      "obj": "std_cabguard.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "std_cabguard.mtl"
+    },
+    {
+      "name": "Std Decking",
+      "obj": "std_decking.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "std_decking.mtl"
+    },
+    {
+      "name": "Std Fuelfilter",
+      "obj": "std_fuelfilter.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "std_fuelfilter.mtl"
+    },
+    {
+      "name": "Steering",
+      "obj": "steering.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "steering.mtl"
+    },
+    {
+      "name": "Switches",
+      "obj": "switches.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "switches.mtl"
+    },
+    {
+      "name": "T Shifter",
+      "obj": "t_shifter.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "t_shifter.mtl"
+    },
+    {
+      "name": "Top Cvx Mirror",
+      "obj": "top_cvx_mirror.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "top_cvx_mirror.mtl"
+    },
+    {
+      "name": "Trainerseat",
+      "obj": "trainerseat.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "trainerseat.mtl"
+    },
+    {
+      "name": "Weld Door",
+      "obj": "weld_door.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "weld_door.mtl",
+      "color": "#ECECE7"
+    },
+    {
+      "name": "Wipers",
+      "obj": "wipers.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "wipers.mtl"
+    },
+    {
+      "name": "Worklight",
+      "obj": "worklight.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "worklight.mtl"
+    },
+    {
+      "name": "Worklights1",
+      "obj": "worklights1.obj",
+      "enabled": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mtl": "worklights1.mtl"
+    }
+  ]
+}
 
