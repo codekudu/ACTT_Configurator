@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "paint",
+  "materials": {
+    "paint": {
+      "color": "#ECECE7",
+      "roughness": 0.25,
+      "metalness": 0.05,
+      "clearcoat": 1,
+      "clearcoatRoughness": 0.1
+    },
+    "blackSteel": {
+      "color": "#111315",
+      "roughness": 0.34,
+      "metalness": 0.55,
+      "clearcoat": 0.25,
+      "clearcoatRoughness": 0.2
+    },
+    "yellow": {
+      "color": "#F2C500",
+      "roughness": 0.3,
+      "metalness": 0.05,
+      "clearcoat": 0.8,
+      "clearcoatRoughness": 0.15
+    },
+    "rubber": {
+      "color": "#161616",
+      "roughness": 0.88,
+      "metalness": 0
+    },
+    "wheel": {
+      "color": "#D9DADD",
+      "roughness": 0.3,
+      "metalness": 0.65,
+      "clearcoat": 0.28,
+      "clearcoatRoughness": 0.2
+    },
+    "stainless": {
+      "color": "#BEC2C0",
+      "roughness": 0.27,
+      "metalness": 0.96,
+      "clearcoat": 0.12,
+      "clearcoatRoughness": 0.2
+    },
+    "chrome": {
+      "color": "#E9EBEC",
+      "roughness": 0.1,
+      "metalness": 1,
+      "clearcoat": 0.5,
+      "clearcoatRoughness": 0.08
+    },
+    "glass": {
+      "color": "#5F8990",
+      "roughness": 0.08,
+      "metalness": 0,
+      "clearcoat": 0.3,
+      "clearcoatRoughness": 0.08,
+      "transmission": 0.15,
+      "opacity": 0.58,
+      "ior": 1.48,
+      "depthWrite": false
+    },
+    "plastic": {
+      "color": "#222629",
+      "roughness": 0.68,
+      "metalness": 0,
+      "clearcoat": 0.03,
+      "clearcoatRoughness": 0.5
+    },
+    "blackPlastic": {
+      "color": "#111315",
+      "roughness": 0.68,
+      "metalness": 0,
+      "clearcoat": 0.03,
+      "clearcoatRoughness": 0.5
+    }
+  },
+  "classification": [
+    {
+      "test": "yellow",
+      "material": "yellow"
+    },
+    {
+      "test": "lightNeutral",
+      "material": "paint"
+    },
+    {
+      "test": "darkNeutral",
+      "material": "blackSteel"
+    },
+    {
+      "test": "midNeutral",
+      "material": "wheel"
+    },
+    {
+      "test": "blueGlass",
+      "material": "glass"
+    },
+    {
+      "test": "dark",
+      "material": "plastic"
+    }
+  ],
+  "assignments": [
+    {
+      "selector": {
+        "component": 35
+      },
+      "material": "blackPlastic"
+    }
+  ]
+}

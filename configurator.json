@@ -1,0 +1,820 @@
+{
+  "product": "Autocar ACTT",
+  "version": 1,
+  "sections": [
+    {
+      "id": "application",
+      "label": "Application & Powertrain",
+      "description": "Operating, application and powertrain settings.",
+      "subsections": [
+        {
+          "id": "DOToperation",
+          "label": "DOT vs. Off-Road",
+          "type": "select",
+          "default": "dot",
+          "options": [
+            {
+              "id": "dot",
+              "label": "DOT",
+              "models": {
+                "show": [
+                  {
+                    "model": ["isb_aft_stack","hydrotank","marker","deftank"],
+                    "if": {
+                      "powerSystem": "diesel"
+                    }
+                  }
+                ],
+                "hide": [
+                  "qsb_aft_stack"
+                ]
+              }
+            },
+            {
+              "id": "offroad",
+              "label": "Off-Road",
+              "models": {
+                "show": [
+                  {
+                    "model": ["qsb_aft_stack","hydrotank"],
+                    "if": {
+                      "powerSystem": "diesel"
+                    }
+                  }
+                ],
+                "hide": [
+                  "isb_aft_stack",
+                  "rh_steps",
+                  "deftank",
+                  "marker"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "powerSystem",
+          "label": "Power System",
+          "type": "select",
+          "default": "diesel",
+          "options": [
+            {
+              "id": "diesel",
+              "label": "Diesel",
+              "models": {
+                "show": [
+                  "powertrain",
+                  "dipstick"
+                ],
+                "hide": [
+                  "ev_battery"
+                ]
+              }
+            },
+            {
+              "id": "electric",
+              "label": "EV",
+              "models": {
+                "show": [
+                  "ev_battery",
+                  "rh_steps",
+                  "lh_steps",
+                  "marker",
+                  "122_frame",
+                  "122_decking"
+                ],
+                "hide": [
+                  "lh_sq_fueltank",
+                  "lh_tank_decking",
+                  "lh_fuel_round",
+                  "bbox",
+                  "116_frame",
+                  "std_decking",
+                  "powertrain",
+                  "isb_aft_stack",
+                  "deftank",
+                  "qsb_aft_stack",
+                  "hydrotank",
+                  "std_decking",
+                  "dipstick"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "wheelbase",
+          "label": "Wheelbase",
+          "type": "select",
+          "default": "116",
+          "options": [
+            {
+              "id": "116",
+              "label": "116 Inches",
+              "models": {
+                "show": [
+                  "116_frame",
+                  "std_decking"
+                ],
+                "hide": [
+                  {
+                    "model": ["122_frame","122_decking"],
+                    "if": {
+                      "powerSystem": "diesel"
+                    }
+                  },
+                  "146_frame",
+                  
+                  "146_decking"
+                  
+                ]
+              }
+            },
+            {
+              "id": "122",
+              "label": "122 Inches",
+              "models": {
+                "show": [
+                  "122_frame",
+                  "122_decking"
+                ],
+                "hide": [
+                  "116_frame",
+                  "146_frame",
+                  "std_decking",
+                  "146_decking"
+                ]
+              }
+            },
+            {
+              "id": "146",
+              "label": "Tandem Axle",
+              "models": {
+                "show": [
+                  "146_frame",
+                  "146_decking"
+                ],
+                "hide": [
+                  "116_frame",
+                  "122_frame",
+                  "std_decking",
+                  "122_decking"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "rearAxle",
+          "label": "Rear Axle",
+          "type": "select",
+          "default": "rs24",
+          "options": [
+            {
+              "id": "rs24",
+              "label": "RS24-160"
+            },
+            {
+              "id": "rs23",
+              "label": "RS23-186"
+            },
+            {
+              "id": "rs30",
+              "label": "RS30-380"
+            },
+            {
+              "id": "sisu",
+              "label": "SiSu Planetary"
+            }
+          ]
+        },
+        {
+          "id": "speedLimit",
+          "label": "Speed limit",
+          "type": "select",
+          "default": "25",
+          "options": [
+            {
+              "id": "15",
+              "label": "15 mph"
+            },
+            {
+              "id": "25",
+              "label": "25 mph"
+            },
+            {
+              "id": "33",
+              "label": "33 mph"
+            },
+            {
+              "id": "45",
+              "label": "45 mph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chassis",
+      "label": "Chassis, Steps & Fenders",
+      "description": "Steps, cab guards, fenders, mudflaps & chassis customizations.",
+      "subsections": [
+        {
+          "id": "fuelTank",
+          "label": "Fuel tank",
+          "type": "select",
+          "default": "round",
+          "options": [
+            {
+              "id": "round",
+              "label": "Round fuel tank",
+              "description": "Standard cylindrical tank with LH access steps.",
+              "models": {
+                "show": [
+                  "lh_fuel_round",
+                  "lh_steps",
+                  "lh_tank_decking",
+                  "bbox"
+                ],
+                "hide": [
+                  "lh_sq_fueltank"
+                ]
+              }
+            },
+            {
+              "id": "square",
+              "label": "Square step fuel tank",
+              "description": "LH rail tank with integrated step profile.",
+              "notice": "LH steps, round tank, straps and bracket are hidden automatically.",
+              "models": {
+                "show": [
+                  "lh_sq_fueltank",
+                  "bbox"
+                ],
+                "hide": [
+                  "lh_fuel_round",
+                  "lh_steps",
+                  "lh_tank_decking",
+                  "bbox_lh"
+                ]
+              }
+            },
+            {
+              "id": "dualtanks",
+              "label": "Dual Square step fuel tanks",
+              "description": "LH & RH rail tank with integrated step profile.",
+              "models": {
+                "show": [
+                  "lh_sq_fueltank",
+                  "rh_sq_fueltank",
+                  "bbox_lh"
+                ],
+                "hide": [
+                  "lh_fuel_round",
+                  "lh_steps",
+                  "lh_tank_decking",
+                  "bbox",
+                  "rh_steps"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "cabguards",
+          "label": "Cab Guards",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "none",
+              "label": "No Cabguards",
+              "models": {
+                "show":[
+                  "rear_handle"
+                ],
+                "hide": [
+                  "std_cabguard",
+                  "fh_cabguard"
+                ]
+              }
+            },
+            {
+              "id": "standard",
+              "label": "Cab Guards",
+              "models": {
+                "show": [
+                  "std_cabguard",
+                  "rear_handle"
+                ],
+                "hide": [
+                  "fh_cabguard"
+                ]
+              }
+            },
+            {
+              "id": "fh_cabguard",
+              "label": "Full Height Cab Guard",
+              "models": {
+                "show": [
+                  "fh_cabguard"
+                ],
+                "hide": [
+                  "std_cabguard",
+                  "rear_handle"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "fuel_filter",
+          "label": "Fuel Filters",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "standard",
+              "label": "Parker Fuel Filter w/heater",
+              "models": {
+                "show":[
+                  "std_fuelfilter"
+                ],
+                "hide": [
+                  "davco_fuelfilter"
+                ]
+              }
+            },
+            {
+              "id": "davco",
+              "label": "Davco Fuel Filter + Primer",
+              "models": {
+                "show": [
+                  "davco_fuelfilter"
+                ],
+                "hide": [
+                  "std_fuelfilter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "fenders",
+          "label": "Fenders",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "standard",
+              "label": "Fender with Mudflap",
+              "models": {
+                "show": [
+                  "fenders",
+                  "mudflaps"
+                ]
+              }
+            },
+            {
+              "id": "basic",
+              "label": "Fenders Only",
+              "models": {
+                "show": [
+                  "fenders"
+                ],
+                "hide": [
+                  "mudflaps"
+                ]
+              }
+            },
+            {
+              "id": "none",
+              "label": "No Fenders or Mudflaps",
+              "models": {
+                "hide": [
+                  "fenders",
+                  "mudflaps"
+                ]
+              }
+            },
+            {
+              "id": "mudflaps",
+              "label": "Mudflaps Only",
+              "models": {
+                "show": [
+                  "mudflaps"
+                ],
+                "hide": [
+                  "fenders"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "steps",
+          "label": "Access Steps",
+          "type": "select",
+          "default": "lh_only",
+          "options": [
+            {
+              "id": "lh_only",
+              "label": "LH Steps",
+              "models": {
+                "show": [
+                  {
+                    "model": "lh_fuel_round",
+                    "if": {
+                      "fuelTank": "round"
+                    }
+                  }
+                ],
+                "hide": [
+                  "rh_steps"
+                ]
+              }
+            },
+            {
+              "id": "dual_steps",
+              "label": "LH & RH Steps",
+              "models": {
+                "show": [
+                  {
+                    "model": "rh_steps",
+                    "if": {
+                      "fuelTank": "round"
+                    }
+                  },
+                  {
+                    "model": "rh_steps",
+                    "if": {
+                      "fuelTank": "square"
+                    }
+                  }
+                ],
+                "hide": [
+                  {
+                    "if": {
+                      "fuelTank": "dualtanks"
+                    },
+                    "models": [
+                      "lh_fuel_round",
+                      "lh_steps",
+                      "lh_tank_decking"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cab",
+      "label": "Cab & Operator",
+      "description": "Cab equipment and Operator environment.",
+      "subsections": [
+        {
+          "id": "seat",
+          "label": "Operator seat",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "standard",
+              "label": "Standard Air Ride Seat",
+              "models": {
+                 "hide": [
+                  "trainerseat"
+                ]
+              }
+            },
+            {
+              "id": "trainerseat",
+              "label": "Trainer Seat",
+              "models": {
+                 "show": [
+                  "trainerseat"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "door",
+          "label": "Doors",
+          "type": "select",
+          "default": "none",
+          "options": [
+            {
+              "id": "none",
+              "label": "No Door Equipment",
+              "models": {
+                 "hide": [
+                  "doorscreen",
+                  "door_handle"
+                ],
+                "show": [
+                  "weld_door"
+                ]
+              }
+            },
+            {
+              "id": "dot_door",
+              "label": "DOT Side Door",
+              "models": {
+                "hide": [
+                  "doorscreen",
+                  "weld_door"
+                ],
+                "show": [
+                  "door_handle"
+                ]
+              }
+            },
+            {
+              "id": "or_door",
+              "label": "No Side Door + Rear Screen",
+              "models": {
+                "show": [
+                  "weld_door",
+                  "doorscreen"
+                ],
+                "hide":["door_handle"]
+              }
+            },
+            {
+              "id": "dot_rear_screen",
+              "label": "DOT Side door + Rear Screen",
+              "models": {
+                "show": [
+                  "doorscreen","door_handle"
+                ],
+                "hide": [
+                  "weld_door"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "shifter",
+          "label": "Transmission Shifter",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "standard",
+              "label": "Push Button",
+              "models": {
+                 "hide": [
+                  "t_shifter"
+                ]
+              }
+            },
+            {
+              "id": "tshifter",
+              "label": "T-Handle Shifter",
+              "models": {
+                 "show": [
+                  "t_shifter"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exterior",
+      "label": "Exterior & Lighting",
+      "description": "Exterior equipment and lighting.",
+      "subsections": [
+        {
+          "id": "lighting",
+          "label": "Lighting",
+          "type": "select",
+          "default": "standard",
+          "options": [
+            {
+              "id": "none",
+              "label": "No Worklights",
+              "models": {
+                "hide": [
+                  "beacon",
+                  "worklights1",
+                  "worklight"
+                ]
+              }
+            },
+            {
+              "id": "standard",
+              "label": "Top & Bottom Rear Facing Worklights",
+              "models": {
+                "show": [
+                  "worklights1","worklight"
+                ],
+                "hide": [
+                  "beacon"
+                ]
+              }
+            },
+            {
+              "id": "beacon",
+              "label": "Beacon Only",
+              "models": {
+                "show": [
+                  "beacon"
+                ],
+                "hide": [
+                  "worklights1","worklight"
+                ]
+              }
+            },
+            {
+              "id": "beacon_w_top_wl",
+              "label": "Top Rear Facing Worklights + Beacon",
+              "models": {
+                "show": [
+                  "worklights1",
+                  "beacon"
+                ]
+              }
+            },
+            {
+              "id": "beacon_w_worklights",
+              "label": "Top & Bottom Rear Facing Worklights + Beacon",
+              "models": {
+                "show": [
+                  "worklights1",
+                  "beacon",
+                  "worklight"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "mirrors",
+          "label": "Mirrors",
+          "type": "select",
+          "default": "heated",
+          "options": [
+            {
+              "id": "no_heat",
+              "label": "Standard Mirrors",
+              "models": {
+                "show": [
+                  "mirrors_std"
+                ],
+                "hide": [
+                  "cvx_mirrors",
+                  "moto_mirror",
+                  "top_cvx_mirror"
+                ]
+              }
+            },
+            {
+              "id": "heated",
+              "label": "Heated Mirrors + Convex",
+              "models": {
+                "show": [
+                  "mirrors_std",
+                  "cvx_mirrors"
+                ],
+                "hide": [
+                  "moto_mirror",
+                  "top_cvx_mirror"
+                ]
+              }
+            },
+            {
+              "id": "heated_w_convex",
+              "label": "Heated Mirrors + Top & Bottom Convex",
+              "models": {
+                "show": [
+                  "mirrors_std",
+                  "cvx_mirrors",
+                  "top_cvx_mirror"
+                ],
+                "hide": [
+                  "moto_mirror"
+                ]
+              }
+            },
+            {
+              "id": "motorized",
+              "label": "Heated & Motorized Mirrors + Convex",
+              "models": {
+                "show": [
+                  "mirrors_std",
+                  "cvx_mirrors",
+                  "moto_mirror",
+                  "top_cvx_mirror"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "Safety & technology",
+      "description": "ABS, ESC, 5th Wheel Indicators etc.",
+      "subsections": [
+        {
+          "id": "esc",
+          "label": "ABS & ESC",
+          "type": "select",
+          "default": "none",
+          "options": [
+            {
+              "id": "none",
+              "label": "None",
+              "models": {
+                "hide": [
+                  "adas"
+                ]
+              }
+            },
+            {
+              "id": "abs",
+              "label": "ABS Brakes",
+              "models": {
+                "hide": [
+                  "adas"
+                ]
+              }
+            },
+            {
+              "id": "esc",
+              "label": "ABS, ESC & ADAS",
+              "models": {
+                "show": [
+                  "adas"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "5th_wheel",
+          "label": "5th Wheel Electronics",
+          "type": "select",
+          "default": "none",
+          "options": [
+            {
+              "id": "none",
+              "label": "None",
+              "models": {
+                "hide": [
+                  "jwl_ind"
+                ]
+              }
+            },
+            {
+              "id": "jawlock",
+              "label": "Jawlock & Boom Height Indicator",
+              "models": {
+                "show": [
+                  "jwl_ind"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "label": "Colors & materials",
+      "type": "componentColor",
+      "description": "Select a component in the model, then change its finish or color."
+    }
+  ],
+  "schemaVersion": 4,
+  "title": "Configure ACTT",
+  "dataFiles": {
+    "materials": "materials.json"
+  },
+  "modelControl": {
+    "source": "models/manifest.json",
+    "key": "name",
+    "note": "Configurator options show/hide complete models by manifest name only."
+  },
+  "ruleEngine": {
+    "supports": [
+      "if",
+      "all",
+      "any",
+      "not"
+    ],
+    "modelEntryFormats": [
+      "string",
+      "model",
+      "models"
+    ]
+  }
+}
